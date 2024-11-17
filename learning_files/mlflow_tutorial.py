@@ -14,3 +14,7 @@ if __name__ == "__main__":
     mlflow.log_metric("score", score)
     mlflow.sklearn.log_model(lr, "model")
     print("Model saved in run %s" % mlflow.active_run().info.run_uuid)
+
+
+# 이후
+# mlflow pyfunc serve -r <run_id> -m model --no-conda --port 5000
