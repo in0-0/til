@@ -1,3 +1,5 @@
+from difflib import SequenceMatcher
+
 s = SequenceMatcher(
     lambda x: x == " ",
     "private Thread currentThread;",
